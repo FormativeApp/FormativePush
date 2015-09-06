@@ -17,7 +17,7 @@ Parse.Cloud.define("postCreated", function(request, response) {
 	Parse.Push.send({
 	    where: pushQuery, // Set our Installation query
 	    data: {
-	    	alert: name + " sent an " + type + " to your care team " + ": \n" + text
+	    	alert: name + " posted to your Care Team " + ": \n" + text
 	    }
 	}, 
 	{
